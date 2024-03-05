@@ -15,7 +15,19 @@ while a<b:
 #задача 3
 a=int(input())
 b=int(input())
-
 while  a<b:
     b-=1
     print(b)
+#Задача 4
+N=int(input())
+K=int(input())
+while K*3>=N:
+   K-=1 
+   print(K)
+#Задача 5
+N=int(input())
+K=int(input())
+while K*3<=N:
+   K+=1 
+   print(K)
+
