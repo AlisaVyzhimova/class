@@ -20,14 +20,34 @@ while  a<b:
     print(b)
 #Задача 4
 N=int(input())
-K=int(input())
-while K*3>=N:
-   K-=1 
-   print(K)
+K=0
+while True:
+K*3>=N
+   K+=1
+else:
+   print(K-1)
 #Задача 5
 N=int(input())
-K=int(input())
-while K*3<=N:
-   K+=1 
-   print(K)
+K=0
+while True:
+K*3>=N
+   K-=1
+else:
+print(k+1)
+задача 6
+n=int(input())
+k=0
+while k<=n:
+    k+=1
+    print(k-1)
+#задача 7
+
+#задача 8
+n=int(input())
+k=1
+while k*k<=n:
+    k+=1
+print("Первое натуральное число, квадрат которого больше", n, "это", k)
+
+
 
