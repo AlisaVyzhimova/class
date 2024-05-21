@@ -1,0 +1,28 @@
+#задание 1.
+def sum_range(start, end):
+    if start > end:
+        start, end = end, start
+    return sum(range(start, end+1))
+
+#задание 2.
+в первой функции ошибки нет, все выводится спокойно. ответ будет 4.
+во второй функции тоже нет ошибки, ошибок нет, и ответ будет тоже 4
+в третьей фунции нет ошибки в с самом коде, ответ 5.
+
+#задание 3.
+def three_args(*, var1, var2=None, var3=None):
+    arguments = ', '.join([f'{arg[0]} = {str(arg[1])}' for arg in locals().items() if arg[1] is not None])
+    print(f'Переданы аргументы: {arguments}')
+
+#задание 4.
+from datetime import datetime
+from time import sleep
+def time_now(msg, *, dt=datetime.now()):
+    print(msg, dt)
+# Тесты
+time_now('Сейчас такое время: ')
+sleep(1)
+time_now('Прошла секунда: ')
+sleep(1)
+time_now('Ничего не понимаю... ')
+ 
